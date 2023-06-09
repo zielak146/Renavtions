@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.4;
+  background-color: #333;
+}
+
+.color-span {
+  color: rgb(158, 92, 215);
+}
+
+.nav-background {
+  background-color: rgba(8, 6, 10, 0.8);
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  background-color: #27004e;
+  height: 4px;
+  width: 80px;
+  margin: 0 auto 40px;
+}
+
+nav {
+  transition: background-color 0.6s ease;
+  z-index: 3;
+  text-transform: uppercase;
+}
+nav .nav-background {
+  background-color: #27004e;
+}
+nav .navbar-toggler {
+  padding: 10px 15px;
+  border: 2px solid white;
+}
+nav .navbar-toggler:focus {
+  box-shadow: none;
+  border: 2px solid rgb(158, 92, 215);
+}
+nav .nav-link,
+nav .navbar-brand,
+nav .fa-bars {
+  color: white;
+  font-weight: bold;
+}
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link.show {
+  color: rgb(158, 92, 215);
+}
+nav .navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+nav .navbar-brand:hover {
+  color: rgb(158, 92, 215);
+}
+
+header .fa-chevron-down {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  font-size: 30px;
+  color: white;
+  z-index: 3;
+  transform: translateX(-50%);
+}
+
+.hero-img {
+  background-image: url("../img/handyman-construction-site-process-drilling-wall-with-perforator.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.hero-text {
+  color: white;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.hero-img::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+}
+
+.services i {
+  font-size: 30px;
+  margin-top: 20px;
+}
+.services .service-card-title {
+  padding: 1rem;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.about-us {
+  background-color: white;
+}
+.about-us .about-us-card-title {
+  color: #27004e;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 48px;
+  }
+  .hero-text p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
