@@ -14,6 +14,60 @@ body {
 .color-span {
 	color: colors.$primary-color;
 }
+.custom-shape-divider-bottom-1686338724 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1686338724 svg {
+    position: relative;
+    display: block;
+    width: calc(193% + 1.3px);
+    height: 139px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1686338724 .shape-fill {
+    fill: #27004E;
+}
+
+.custom-shape-divider-bottom-1686338275 svg {
+    position: relative;
+    display: block;
+    width: calc(165% + 1.3px);
+    height: 154px;
+}
+
+.custom-shape-divider-bottom-1686338275 .shape-fill {
+    fill: #27004E;
+}
+
+.custom-shape-divider-bottom-1686339105 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1686339105 svg {
+    position: relative;
+    display: block;
+    width: calc(193% + 1.3px);
+    height: 139px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1686339105 .shape-fill {
+    fill: #27004E;
+}
 
 .nav-background {
 	background-color: rgba(8, 6, 10, 0.8);
@@ -118,6 +172,7 @@ header {
 }
 
 .services {
+	position: relative;
 	
 	i{
 		font-size: 30px;
@@ -132,13 +187,15 @@ header {
 	
 }
 .about-us{
+	position: relative;
+	height: 100vh;
 	background-color: white;
 	
 
 	.about-us-card-title{
-		color:colors.$secondary-color;
-		font-size: 22px;
-		font-weight: bold;
+		
+		font-size: 24px;
+		// font-weight: bold;
 	}
 }
 
