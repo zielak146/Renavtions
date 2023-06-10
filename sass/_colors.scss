@@ -1,3 +1,46 @@
 $basic-color:white;
 $primary-color:rgb(158, 92, 215);
 $secondary-color:#27004e;
+
+.custom-shape-divider-top-1686398234 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1686398234 svg {
+    position: relative;
+    display: block;
+    width: calc(194% + 1.3px);
+    height: 144px;
+}
+
+.custom-shape-divider-top-1686398234 .shape-fill {
+    fill: #27004E;
+}
+
+
+
+.custom-shape-divider-bottom-1686397479 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1686397479 svg {
+    position: relative;
+    display: block;
+    width: calc(180% + 1.3px);
+    height: 117px;
+}
+
+.custom-shape-divider-bottom-1686397479 .shape-fill {
+    fill: #27004E;
+}
