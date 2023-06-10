@@ -64,6 +64,7 @@ body {
   position: relative;
   z-index: 5;
   color: white;
+  font-size: 22px;
   text-align: center;
   text-transform: uppercase;
 }
