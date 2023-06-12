@@ -102,7 +102,7 @@ body {
   position: relative;
   z-index: 5;
   color: #07092B;
-  font-size: 28px;
+  font-size: 30px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -212,7 +212,7 @@ header .fa-chevron-down {
   background-color: white;
 }
 .about-us .about-us-card-title {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 @media (min-width: 768px) {
