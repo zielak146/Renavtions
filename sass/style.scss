@@ -9,8 +9,8 @@
 
 body {
 	font-family: 'Nunito', sans-serif;
-	line-height: 1.4;
-	background-color: #333;
+	
+	background-color: #dedede;
 }
 .color-span {
 	color: colors.$primary-color;
@@ -26,8 +26,8 @@ body {
 .section-title {
 	position: relative;
 	z-index: 5;
-	color: white;
-	font-size: 22px;
+	color: #07092B;
+	font-size: 28px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -127,6 +127,8 @@ header {
 
 .services {
 	position: relative;
+	background-color: #07092B;
+	
 	
 	i{
 		font-size: 30px;

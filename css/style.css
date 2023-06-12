@@ -1,42 +1,81 @@
-.custom-shape-divider-top-1686398234 {
+.custom-shape-divider-top-1686550659 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
-  line-height: 0;
+  transform: rotate(180deg);
 }
 
-.custom-shape-divider-top-1686398234 svg {
+.custom-shape-divider-top-1686550659 svg {
   position: relative;
   display: block;
-  width: calc(194% + 1.3px);
-  height: 144px;
+  width: calc(100% + 1.3px);
+  height: 108px;
 }
 
-.custom-shape-divider-top-1686398234 .shape-fill {
-  fill: #27004E;
+.custom-shape-divider-top-1686550659 .shape-fill {
+  fill: #07092B;
 }
 
-.custom-shape-divider-bottom-1686397479 {
+.custom-shape-divider-bottom-1686550730 {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
+}
+
+.custom-shape-divider-bottom-1686550730 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 108px;
+}
+
+.custom-shape-divider-bottom-1686550730 .shape-fill {
+  fill: #07092B;
+}
+
+.custom-shape-divider-top-1686550810 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1686397479 svg {
+.custom-shape-divider-top-1686550810 svg {
   position: relative;
   display: block;
-  width: calc(180% + 1.3px);
-  height: 117px;
+  width: calc(100% + 1.3px);
+  height: 108px;
 }
 
-.custom-shape-divider-bottom-1686397479 .shape-fill {
-  fill: #27004E;
+.custom-shape-divider-top-1686550810 .shape-fill {
+  fill: #07092B;
+}
+
+.custom-shape-divider-bottom-1686550849 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1686550849 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 108px;
+}
+
+.custom-shape-divider-bottom-1686550849 .shape-fill {
+  fill: #07092B;
 }
 
 * {
@@ -48,8 +87,7 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  line-height: 1.4;
-  background-color: #333;
+  background-color: #dedede;
 }
 
 .color-span {
@@ -63,8 +101,8 @@ body {
 .section-title {
   position: relative;
   z-index: 5;
-  color: white;
-  font-size: 22px;
+  color: #07092B;
+  font-size: 28px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -157,6 +195,7 @@ header .fa-chevron-down {
 
 .services {
   position: relative;
+  background-color: #07092B;
 }
 .services i {
   font-size: 30px;
