@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   overflow: hidden;
+  line-height: 0;
   transform: rotate(180deg);
 }
 
@@ -20,7 +21,7 @@
 
 .custom-shape-divider-bottom-1686550730 {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -40,7 +41,7 @@
 
 .custom-shape-divider-top-1686550810 {
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -60,7 +61,7 @@
 
 .custom-shape-divider-bottom-1686550849 {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -82,12 +83,14 @@
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
-  scroll-padding-top: 55px;
+}
+
+html {
+  scroll-padding-top: 61px;
 }
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #dedede;
 }
 
 .color-span {
@@ -215,11 +218,21 @@ header .fa-chevron-down {
   font-size: 22px;
 }
 
+.why-us {
+  position: relative;
+  top: -6px;
+}
+
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 48px;
   }
   .hero-text p {
     font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 56px;
   }
 }/*# sourceMappingURL=style.css.map */

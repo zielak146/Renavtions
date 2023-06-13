@@ -1,4 +1,4 @@
-$basic-color:white;
+// $basic-color:white;
 $primary-color:rgb(158, 92, 215);
 $secondary-color:#27004e;
 
@@ -8,7 +8,7 @@ $secondary-color:#27004e;
     left: 0;
     width: 100%;
     overflow: hidden;
-    // line-height: 0;
+    line-height: 0;
     transform: rotate(180deg);
 }
 
@@ -28,7 +28,7 @@ $secondary-color:#27004e;
 
 .custom-shape-divider-bottom-1686550730 {
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -48,7 +48,7 @@ $secondary-color:#27004e;
 
 .custom-shape-divider-top-1686550810 {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -69,7 +69,7 @@ $secondary-color:#27004e;
 
 .custom-shape-divider-bottom-1686550849 {
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     width: 100%;
     overflow: hidden;
