@@ -100,6 +100,7 @@ header {
 }
 
 .hero-img {
+	position: relative;
 	background-image: url('../img/handyman-construction-site-process-drilling-wall-with-perforator.jpg');
 	background-size: cover;
 	background-position: center;
@@ -162,6 +163,26 @@ header {
 .why-us{
 	position: relative;
 	top:-6px;
+}
+
+.contact{
+	position: relative;
+	
+	background-color: #07092B;
+	color: white;
+	.fa-brands{
+		color:white;
+		font-size: 28px;
+	}
+	.fa-solid{
+		color:white;
+		font-size: 28px;
+	}
+	a{
+		color:white;
+		text-decoration: none;
+		padding-left: 1rem;
+	}
 }
 // @media (min-width: 1200px) {
 // 	.hero-img {

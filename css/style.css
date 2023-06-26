@@ -41,10 +41,11 @@
 
 .custom-shape-divider-top-1686550810 {
   position: absolute;
-  top: 5px;
+  top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
+  line-height: 0;
   transform: rotate(180deg);
 }
 
@@ -111,7 +112,7 @@ body {
 }
 
 .underline {
-  background-color: #27004e;
+  background-color: rgb(39, 0, 78);
   height: 4px;
   width: 80px;
   margin: 0 auto 40px;
@@ -123,7 +124,7 @@ nav {
   text-transform: uppercase;
 }
 nav .nav-background {
-  background-color: #27004e;
+  background-color: rgb(39, 0, 78);
 }
 nav .navbar-toggler {
   padding: 10px 15px;
@@ -164,6 +165,7 @@ header .fa-chevron-down {
 }
 
 .hero-img {
+  position: relative;
   background-image: url("../img/handyman-construction-site-process-drilling-wall-with-perforator.jpg");
   background-size: cover;
   background-position: center;
@@ -221,6 +223,25 @@ header .fa-chevron-down {
 .why-us {
   position: relative;
   top: -6px;
+}
+
+.contact {
+  position: relative;
+  background-color: #07092B;
+  color: white;
+}
+.contact .fa-brands {
+  color: white;
+  font-size: 28px;
+}
+.contact .fa-solid {
+  color: white;
+  font-size: 28px;
+}
+.contact a {
+  color: white;
+  text-decoration: none;
+  padding-left: 1rem;
 }
 
 @media (min-width: 768px) {
