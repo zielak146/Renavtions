@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navList = document.querySelector('.navbar-collapse')
 
      function addBackground() {
-      if (window.scrollY >= 100) {
+      if (window.scrollY >= 0) {
         nav.classList.add('nav-background');
       } else {
         nav.classList.remove('nav-background');
