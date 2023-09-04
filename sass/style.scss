@@ -22,17 +22,26 @@ body {
 }
 
 .nav-background {
-	background-color: rgba(45, 2, 106, 0.95);
+	background-color: rgb(4, 19, 71);
 }
 
 nav {
 	transition: background-color 0.6s ease;
 	// background-color: colors.$secondary-color;
-	z-index:100;
+	z-index: 100;
 
 	text-transform: uppercase;
-	.nav-background {
-		background-color: white;
+	.navbar-items{
+		padding: 0.5em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.nav-link{
+		padding: 0.5em;
+		font-size: 1.4rem;
 	}
 
 	.navbar-toggler {
@@ -41,7 +50,7 @@ nav {
 	}
 	.navbar-toggler:focus {
 		box-shadow: none;
-		border: 2px solid rgb(130, 48, 181);
+		border: 2px solid rgba(52, 89, 221, 0.801);
 	}
 
 	.nav-link,
@@ -54,7 +63,7 @@ nav {
 	.nav-link:hover,
 	.navbar-nav .nav-link.active,
 	.navbar-nav .nav-link.show {
-		color: rgb(190, 10, 214);
+		color: rgba(52, 89, 221, 0.801);
 	}
 	.navbar-brand {
 		font-weight: bold;
@@ -62,7 +71,7 @@ nav {
 	}
 
 	.navbar-brand:hover {
-		color: rgb(190, 10, 214);
+		color: rgba(52, 89, 221, 0.801);
 	}
 }
 
@@ -101,6 +110,9 @@ header {
 	justify-content: center;
 	align-items: center;
 	z-index: 2;
+	span {
+		color: rgba(167, 117, 237, 1);
+	}
 }
 .hero-img::before {
 	content: '';
@@ -164,7 +176,6 @@ header {
 	}
 }
 
-
 // SERVICES
 
 .services {
@@ -183,6 +194,9 @@ header {
 		height: 400px;
 		width: 100%;
 		margin-bottom: 1.5em;
+		box-shadow: 10px 10px 10px rgba(14, 27, 47, 0.65);
+		border-radius: 8px;
+		overflow: hidden;
 		&-img {
 			position: relative;
 			height: 100%;
@@ -204,6 +218,9 @@ header {
 				left: 0;
 				background: $main-gradient;
 				border-radius: 8px;
+				
+				overflow: hidden;
+				
 			}
 
 			&-title {
@@ -284,8 +301,6 @@ header {
 }
 
 .why-us {
-	
-	
 	&__cards {
 		display: flex;
 		flex-direction: column;
@@ -298,11 +313,71 @@ header {
 		height: 300px;
 		width: 300px;
 		background-position: center;
-		
 	}
-	&__card-accordion{
+	&__card-accordion {
 		width: 80%;
+		border-radius: 8px;
+		box-shadow: 10px 10px 10px rgba(14, 27, 47, 0.65);
 	}
+}
+
+
+// REVIEWS
+
+.reviews{
+	@include heroImages ('../img/reviews-small.jpg');
+	.section-heading{
+		color:white;
+	}
+&__cards{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+&__card{
+	position: relative;
+		height: 100%;
+		width: 100%;
+		margin: 3em;
+		background: white;
+		border-radius: 8px;
+		box-shadow: 5px 5px 10px rgba(52, 89, 221, 0.801);
+		&-img{
+			position: absolute;
+			top: -47px;
+			right: 5px;
+			img{
+				height: 100px;
+				width: 100px;
+				object-fit: cover;
+				border-radius: 50%;
+			}
+		}
+		&-info{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			// align-items: center;
+			padding: 2em;
+			
+		}
+		.rewiews__card-text{font-size: 1.4rem;
+		}
+		&-quote{
+			font-size: 2rem;
+			color: rgba(52, 89, 221, 0.801)
+			
+		}
+		&-name{
+			align-self: flex-end;
+			font-weight: bold;
+			font-size: 1.4rem;
+			
+		}
+		
+}
+
 }
 
 // Media/
@@ -321,21 +396,23 @@ header {
 			margin: 1em;
 		}
 	}
-	.why-us{
-		&__cards{
+	.why-us {
+		&__cards {
 			flex-direction: row;
 			gap: 4em;
 		}
-		&__card-img{
+		&__card-img {
 			height: 400px;
 		}
-		&__card-accordion{
+		&__card-accordion {
 			width: 60%;
 		}
 	}
+	
 }
 
 @media (min-width: 992px) {
+	
 	.about-us {
 		&__boxes {
 			flex-direction: row;
@@ -355,6 +432,17 @@ header {
 		padding: 8em;
 		background-image: url(../img/adv.jpg);
 	}
+	.reviews{
+		&__cards{
+		
+			flex-direction: row;
+			
+		}
+		&__card{
+			margin: 2em;
+			width: 30%;
+		}
+	}
 }
 
 @media (min-width: 1100px) {
@@ -362,6 +450,5 @@ header {
 		&__card {
 			width: 30%;
 		}
-		
 	}
 }
