@@ -31,15 +31,14 @@ nav {
 	z-index: 100;
 
 	text-transform: uppercase;
-	.navbar-items{
+	.navbar-items {
 		padding: 0.5em;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
 	}
-	.nav-link{
+	.nav-link {
 		padding: 0.5em;
 		font-size: 1.4rem;
 	}
@@ -106,12 +105,19 @@ header {
 	position: relative;
 	text-align: center;
 	display: flex;
+
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	z-index: 2;
 	span {
-		color: rgba(167, 117, 237, 1);
+		color: $hover-color;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	p {
+		font-size: 1.4rem;
 	}
 }
 .hero-img::before {
@@ -127,22 +133,17 @@ header {
 // ABOUT
 
 .about-us {
-	margin-top: 2em;
 	height: 100%;
 	width: 100%;
 
 	&__boxes {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		gap: 4em;
 	}
 	&__box {
 		width: 100%;
-		height: 100%;
-		padding: 0.5em;
-		margin-right: 2em;
 
+		height: 100%;
 		&-heading {
 			text-transform: uppercase;
 			margin-top: 0.5em;
@@ -151,22 +152,27 @@ header {
 			font-size: 2rem;
 		}
 		&-text {
-			padding: 0.5em;
+			position: relative;
+			z-index: 5;
+			padding: 1em;
+			font-size: 1rem;
+			color: white;
 			text-align: center;
 		}
 		&-img {
 			position: relative;
-			height: 400px;
+			height: 100%;
 			width: 100%;
 			background-image: url('../img/tiler-working-renovation-apartment.jpg');
 			background-size: cover;
 			background-position: center;
 			border-radius: 8px;
+			box-shadow: 5px 5px 10px $shadow-color;
 			&::before {
 				position: absolute;
 				border-radius: 8px;
 				content: '';
-				background: $main-gradient;
+				background: $main-gradient-dark;
 				z-index: 1;
 				height: 100%;
 				width: 100%;
@@ -218,9 +224,8 @@ header {
 				left: 0;
 				background: $main-gradient;
 				border-radius: 8px;
-				
+
 				overflow: hidden;
-				
 			}
 
 			&-title {
@@ -267,7 +272,7 @@ header {
 		right: 0;
 		left: 0;
 
-		background: $main-gradient;
+		background: $main-gradient-dark;
 	}
 	.adv__hero {
 		display: flex;
@@ -277,8 +282,6 @@ header {
 		z-index: 1;
 		padding: 3em;
 		&-heading {
-			width: 400px;
-			// position: relative;
 			color: white;
 			z-index: 1;
 			text-align: center;
@@ -296,6 +299,10 @@ header {
 			color: white;
 			text-transform: uppercase;
 			align-self: center;
+			transition: background-color 0.7s;
+			&:hover {
+				background-color: $hover-color;
+			}
 		}
 	}
 }
@@ -321,68 +328,78 @@ header {
 	}
 }
 
-
 // REVIEWS
 
-.reviews{
-	@include heroImages ('../img/reviews-small.jpg');
-	.section-heading{
-		color:white;
+.reviews {
+	@include heroImages('../img/reviews-small.jpg');
+	.section-heading {
+		color: white;
 	}
-&__cards{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-&__card{
-	position: relative;
+	&__cards {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	&__card {
+		position: relative;
 		height: 100%;
 		width: 100%;
 		margin: 3em;
 		background: white;
 		border-radius: 8px;
-		box-shadow: 5px 5px 10px rgba(52, 89, 221, 0.801);
-		&-img{
+		box-shadow: 5px 5px 10px $shadow-color;
+		transition: all 0.7s;
+		&:hover {
+			background-color: $hover-color;
+			color: white;
+			.reviews__card-quote {
+				color: white;
+			}
+		}
+		&-img {
 			position: absolute;
 			top: -47px;
 			right: 5px;
-			img{
+			img {
 				height: 100px;
 				width: 100px;
 				object-fit: cover;
 				border-radius: 50%;
 			}
 		}
-		&-info{
+		&-info {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			// align-items: center;
 			padding: 2em;
-			
 		}
-		.rewiews__card-text{font-size: 1.4rem;
+		.rewiews__card-text {
+			font-size: 1.4rem;
 		}
-		&-quote{
+		&-quote {
 			font-size: 2rem;
-			color: rgba(52, 89, 221, 0.801)
-			
+			color: rgba(52, 89, 221, 0.801);
 		}
-		&-name{
+		&-name {
 			align-self: flex-end;
 			font-weight: bold;
 			font-size: 1.4rem;
-			
 		}
-		
-}
-
+	}
 }
 
 // Media/
 
 @media (min-width: 767px) {
+	.about-us {
+		&__box {
+			&-text {
+				font-size: 1.2rem;
+			}
+		}
+	}
 	.services {
 		&__cards {
 			display: flex;
@@ -408,23 +425,13 @@ header {
 			width: 60%;
 		}
 	}
-	
 }
 
 @media (min-width: 992px) {
-	
 	.about-us {
-		&__boxes {
-			flex-direction: row;
-			align-items: center;
-		}
 		&__box {
-			margin: 5em;
-			&--left {
-				width: 40%;
-			}
-			&--right {
-				width: 60%;
+			&-text {
+				font-size: 1.4rem;
 			}
 		}
 	}
@@ -432,13 +439,11 @@ header {
 		padding: 8em;
 		background-image: url(../img/adv.jpg);
 	}
-	.reviews{
-		&__cards{
-		
+	.reviews {
+		&__cards {
 			flex-direction: row;
-			
 		}
-		&__card{
+		&__card {
 			margin: 2em;
 			width: 30%;
 		}

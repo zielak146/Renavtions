@@ -116,7 +116,13 @@ header .fa-chevron-down {
   z-index: 2;
 }
 .hero-text span {
-  color: rgb(167, 117, 237);
+  color: rgba(52, 89, 221, 0.801);
+}
+.hero-text h1 {
+  font-size: 2rem;
+}
+.hero-text p {
+  font-size: 1.4rem;
 }
 
 .hero-img::before {
@@ -130,21 +136,16 @@ header .fa-chevron-down {
 }
 
 .about-us {
-  margin-top: 2em;
   height: 100%;
   width: 100%;
 }
 .about-us__boxes {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 4em;
 }
 .about-us__box {
   width: 100%;
   height: 100%;
-  padding: 0.5em;
-  margin-right: 2em;
 }
 .about-us__box-heading {
   text-transform: uppercase;
@@ -154,23 +155,28 @@ header .fa-chevron-down {
   font-size: 2rem;
 }
 .about-us__box-text {
-  padding: 0.5em;
+  position: relative;
+  z-index: 5;
+  padding: 1em;
+  font-size: 1rem;
+  color: white;
   text-align: center;
 }
 .about-us__box-img {
   position: relative;
-  height: 400px;
+  height: 100%;
   width: 100%;
   background-image: url("../img/tiler-working-renovation-apartment.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(52, 89, 221, 0.801);
 }
 .about-us__box-img::before {
   position: absolute;
   border-radius: 8px;
   content: "";
-  background: linear-gradient(45deg, rgba(14, 27, 47, 0.65), rgba(42, 10, 184, 0.65));
+  background: linear-gradient(45deg, rgba(14, 27, 47, 0.95), rgba(42, 10, 184, 0.75));
   z-index: 1;
   height: 100%;
   width: 100%;
@@ -258,7 +264,7 @@ header .fa-chevron-down {
   bottom: 0;
   right: 0;
   left: 0;
-  background: linear-gradient(45deg, rgba(14, 27, 47, 0.65), rgba(42, 10, 184, 0.65));
+  background: linear-gradient(45deg, rgba(14, 27, 47, 0.95), rgba(42, 10, 184, 0.75));
 }
 .adv .adv__hero {
   display: flex;
@@ -269,7 +275,6 @@ header .fa-chevron-down {
   padding: 3em;
 }
 .adv .adv__hero-heading {
-  width: 400px;
   color: white;
   z-index: 1;
   text-align: center;
@@ -287,6 +292,10 @@ header .fa-chevron-down {
   color: white;
   text-transform: uppercase;
   align-self: center;
+  transition: background-color 0.7s;
+}
+.adv .adv__hero-btn:hover {
+  background-color: rgba(52, 89, 221, 0.801);
 }
 
 .why-us__cards {
@@ -330,6 +339,14 @@ header .fa-chevron-down {
   background: white;
   border-radius: 8px;
   box-shadow: 5px 5px 10px rgba(52, 89, 221, 0.801);
+  transition: all 0.7s;
+}
+.reviews__card:hover {
+  background-color: rgba(52, 89, 221, 0.801);
+  color: white;
+}
+.reviews__card:hover .reviews__card-quote {
+  color: white;
 }
 .reviews__card-img {
   position: absolute;
@@ -363,6 +380,9 @@ header .fa-chevron-down {
 }
 
 @media (min-width: 767px) {
+  .about-us__box-text {
+    font-size: 1.2rem;
+  }
   .services__cards {
     display: flex;
     flex-wrap: wrap;
@@ -386,18 +406,8 @@ header .fa-chevron-down {
   }
 }
 @media (min-width: 992px) {
-  .about-us__boxes {
-    flex-direction: row;
-    align-items: center;
-  }
-  .about-us__box {
-    margin: 5em;
-  }
-  .about-us__box--left {
-    width: 40%;
-  }
-  .about-us__box--right {
-    width: 60%;
+  .about-us__box-text {
+    font-size: 1.4rem;
   }
   .adv {
     padding: 8em;

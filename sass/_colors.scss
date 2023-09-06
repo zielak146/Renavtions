@@ -4,8 +4,8 @@ $pure-white: #fff;
 $light-white: #fffefe;
 $dark: #2e2e2e;
 $green-color: #00ffaa;
-$green-color-hover: #0fe29c;
-$shadow-color: rgb(12, 110, 48);
+$hover-color:rgba(52, 89, 221, 0.801);
+$shadow-color: rgba(52, 89, 221, 0.801);
 
 $light-blue-gradient: linear-gradient(
 	45deg,
@@ -16,6 +16,11 @@ $main-gradient: linear-gradient(
 	45deg,
 	rgba(14, 27, 47, 0.65),
 	rgba(42, 10, 184, 0.65)
+);
+$main-gradient-dark: linear-gradient(
+	45deg,
+	rgba(14, 27, 47, 0.95),
+	rgba(42, 10, 184, 0.75)
 );
 $purple-gradient: linear-gradient(
 	45deg,
