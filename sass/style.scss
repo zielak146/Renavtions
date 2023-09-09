@@ -22,7 +22,7 @@ body {
 }
 
 .nav-background {
-	background-color: rgb(4, 19, 71);
+	background-color: $main-color;
 }
 
 nav {
@@ -67,10 +67,11 @@ nav {
 	.navbar-brand {
 		font-weight: bold;
 		letter-spacing: 1px;
+		font-size: 1.4rem;
 	}
 
 	.navbar-brand:hover {
-		color: rgba(52, 89, 221, 0.801);
+		color: $hover-color;
 	}
 }
 
@@ -128,6 +129,24 @@ header {
 	width: 100%;
 	background-size: cover;
 	position: absolute;
+}
+
+.hero-btn {
+	width: 200px;
+	text-align: center;
+	text-decoration: none;
+	padding: 0.5em;
+	z-index: 1;
+	border: 2px solid white;
+	border-radius: 8px;
+	background: none;
+	color: white;
+	text-transform: uppercase;
+	align-self: center;
+	transition: background-color 0.7s;
+	&:hover {
+		background-color: $hover-color;
+	}
 }
 
 // ABOUT
@@ -322,7 +341,7 @@ header {
 		background-position: center;
 	}
 	&__card-accordion {
-		width: 80%;
+		
 		border-radius: 8px;
 		box-shadow: 10px 10px 10px rgba(14, 27, 47, 0.65);
 	}
@@ -390,6 +409,57 @@ header {
 	}
 }
 
+.contact {
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__box {
+		margin-bottom: 2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+	}
+
+	&__box-text {
+		text-align: center;
+		font-size: 1.4rem;
+		// border: 2px solid $main-color;
+		// border-radius: 8px;
+		padding: 1em;
+	}
+
+	&__box-form {
+		text-align: center;
+		padding: 4em 2em;
+		border-radius: 8px;
+		display: flex;
+		flex-direction: column;
+		background-color: $main-color;
+		label {
+			color: white;
+			margin: 0.5em 0;
+			font-size: 1.4rem;
+		}
+		textarea {
+			padding: 0 1em;
+		}
+	}
+	&__box-info-text {
+		text-align: center;
+		font-size: 1.4rem;
+		margin: 2em 0;
+		i {
+			font-size: 2.4rem;
+			margin-bottom: 0.5em;
+			color: $main-color;
+		}
+	}
+}
+
 // Media/
 
 @media (min-width: 767px) {
@@ -428,6 +498,14 @@ header {
 }
 
 @media (min-width: 992px) {
+	.hero-text {
+		h1 {
+			font-size: 3.6rem;
+		}
+		p {
+			font-size: 1.8rem;
+		}
+	}
 	.about-us {
 		&__box {
 			&-text {
@@ -448,11 +526,43 @@ header {
 			width: 30%;
 		}
 	}
-}
+	.contact {
+		&__boxes {
+			align-items: start;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 2em
+			;
+		}
+		&__box {
+			
+			width: 45%;
+			box-shadow: 5px 5px 10px $shadow-color;
+			border-radius: 8px;
+		}
+		&__box-text{
+			border: 2px solid $shadow-color;
+			border-radius: 8px;
+			padding: 2em;
+		}
+		&__box-form{
+			padding: 5em 2em;
+		}
+		&__box-info{
+			border: 2px solid $shadow-color;
+			border-radius: 8px;
+		}
+		
+}}
 
 @media (min-width: 1100px) {
 	.services {
 		&__card {
+			width: 30%;
+		}
+	}
+	.contact{
+		&__box{
 			width: 30%;
 		}
 	}
