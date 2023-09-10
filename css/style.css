@@ -18,6 +18,7 @@
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -34,52 +35,60 @@ body {
   max-width: 1400px;
 }
 
-.nav-background {
-  background-color: rgb(4, 19, 71);
-}
-
-nav {
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
   transition: background-color 0.6s ease;
   z-index: 100;
+  background-color: rgb(4, 19, 71);
   text-transform: uppercase;
 }
-nav .navbar-items {
+.navbar .navbar-items {
+  margin-top: 0.5em;
   padding: 0.5em;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.5s ease-out;
 }
-nav .nav-link {
+.navbar .navbar-items--active {
+  display: flex;
+}
+.navbar .nav-link {
   padding: 0.5em;
   font-size: 1.4rem;
 }
-nav .navbar-toggler {
-  padding: 10px 15px;
+.navbar .navbar-toggler {
+  padding: 0.5em;
+  margin-right: 1em;
   border: 2px solid white;
 }
-nav .navbar-toggler:focus {
+.navbar .navbar-toggler:focus {
   box-shadow: none;
   border: 2px solid rgba(52, 89, 221, 0.801);
 }
-nav .nav-link,
-nav .navbar-brand,
-nav .fa-bars {
-  color: white;
-  font-weight: bold;
-}
-nav .nav-link:focus,
-nav .nav-link:hover,
-nav .navbar-nav .nav-link.active,
-nav .navbar-nav .nav-link.show {
-  color: rgba(52, 89, 221, 0.801);
-}
-nav .navbar-brand {
+.navbar .navbar-brand {
+  margin-left: 1em;
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 1.4rem;
 }
-nav .navbar-brand:hover {
+.navbar .navbar-brand:hover {
+  color: rgba(52, 89, 221, 0.801);
+}
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .fa-bars {
+  color: white;
+  font-weight: bold;
+}
+.navbar .nav-link:focus,
+.navbar .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.show {
   color: rgba(52, 89, 221, 0.801);
 }
 
@@ -396,6 +405,7 @@ header .fa-chevron-down {
   align-self: flex-end;
   font-weight: bold;
   font-size: 1.4rem;
+  color: rgba(52, 89, 221, 0.801);
 }
 
 .contact__boxes {
@@ -494,24 +504,17 @@ header .fa-chevron-down {
     align-items: start;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 3em;
   }
   .contact__box {
     width: 45%;
-    box-shadow: 5px 5px 10px rgba(52, 89, 221, 0.801);
     border-radius: 8px;
   }
   .contact__box-text {
-    border: 2px solid rgba(52, 89, 221, 0.801);
-    border-radius: 8px;
     padding: 2em;
   }
   .contact__box-form {
     padding: 5em 2em;
-  }
-  .contact__box-info {
-    border: 2px solid rgba(52, 89, 221, 0.801);
-    border-radius: 8px;
   }
 }
 @media (min-width: 1100px) {

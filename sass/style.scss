@@ -5,6 +5,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Nunito', sans-serif;
+	scroll-behavior:smooth;
 }
 
 html {
@@ -21,30 +22,43 @@ body {
 	max-width: 1400px;
 }
 
-.nav-background {
-	background-color: $main-color;
-}
-
-nav {
+.navbar {
+	position: fixed;
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
 	transition: background-color 0.6s ease;
 	// background-color: colors.$secondary-color;
 	z-index: 100;
-
+	background-color: $main-color;
 	text-transform: uppercase;
+	
+
 	.navbar-items {
+		margin-top: 0.5em;
 		padding: 0.5em;
-		display: flex;
+		display: none;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		
+		transition: 0.5s ease-out;
+	
+		&--active {
+			display: flex;
+		}
 	}
+
+	
+
 	.nav-link {
 		padding: 0.5em;
 		font-size: 1.4rem;
 	}
 
 	.navbar-toggler {
-		padding: 10px 15px;
+		padding: 0.5em;
+		margin-right: 1em;
 		border: 2px solid white;
 	}
 	.navbar-toggler:focus {
@@ -52,6 +66,15 @@ nav {
 		border: 2px solid rgba(52, 89, 221, 0.801);
 	}
 
+	.navbar-brand {
+		margin-left: 1em;
+		font-weight: bold;
+		letter-spacing: 1px;
+		font-size: 1.4rem;
+	}
+	.navbar-brand:hover {
+		color: $hover-color;
+	}
 	.nav-link,
 	.navbar-brand,
 	.fa-bars {
@@ -63,15 +86,6 @@ nav {
 	.navbar-nav .nav-link.active,
 	.navbar-nav .nav-link.show {
 		color: rgba(52, 89, 221, 0.801);
-	}
-	.navbar-brand {
-		font-weight: bold;
-		letter-spacing: 1px;
-		font-size: 1.4rem;
-	}
-
-	.navbar-brand:hover {
-		color: $hover-color;
 	}
 }
 
@@ -341,7 +355,6 @@ header {
 		background-position: center;
 	}
 	&__card-accordion {
-		
 		border-radius: 8px;
 		box-shadow: 10px 10px 10px rgba(14, 27, 47, 0.65);
 	}
@@ -405,6 +418,7 @@ header {
 			align-self: flex-end;
 			font-weight: bold;
 			font-size: 1.4rem;
+			color: rgba(52, 89, 221, 0.801);
 		}
 	}
 }
@@ -531,29 +545,21 @@ header {
 			align-items: start;
 			flex-direction: row;
 			flex-wrap: wrap;
-			gap: 2em
-			;
+			gap: 3em;
 		}
 		&__box {
-			
 			width: 45%;
-			box-shadow: 5px 5px 10px $shadow-color;
+
 			border-radius: 8px;
 		}
-		&__box-text{
-			border: 2px solid $shadow-color;
-			border-radius: 8px;
+		&__box-text {
 			padding: 2em;
 		}
-		&__box-form{
+		&__box-form {
 			padding: 5em 2em;
 		}
-		&__box-info{
-			border: 2px solid $shadow-color;
-			border-radius: 8px;
-		}
-		
-}}
+	}
+}
 
 @media (min-width: 1100px) {
 	.services {
@@ -561,8 +567,8 @@ header {
 			width: 30%;
 		}
 	}
-	.contact{
-		&__box{
+	.contact {
+		&__box {
 			width: 30%;
 		}
 	}

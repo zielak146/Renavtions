@@ -1,23 +1,19 @@
-document.addEventListener('DOMContentLoaded', function () {
-	const nav = document.querySelector('.navbar');
-	const allNavItems = document.querySelectorAll('.nav-link');
-	const navList = document.querySelector('.navbar-collapse');
+const navBtn = document.querySelector('.navbar-toggler');
+const navbarItems = document.querySelector('.navbar-items');
 
-	function addBackground() {
-		if (window.scrollY >= 0) {
-			nav.classList.add('nav-background');
-		} else {
-			nav.classList.remove('nav-background');
-		}
-	}
-	allNavItems.forEach((item) =>
-		item.addEventListener('click', () => {
-			navList.classList.remove('show');
-		})
-	);
-
-	window.addEventListener('scroll', addBackground);
+navBtn.addEventListener('click', () => {
+    navbarItems.classList.toggle('navbar-items--active');
 });
+
+// Close the navigation menu when a link is clicked
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navbarItems.classList.remove('navbar-items--active');
+    });
+});
+
 
 
 
