@@ -38,6 +38,7 @@ body {
 		margin-top: 0.5em;
 		padding: 0.5em;
 		display: none;
+		height: 100%;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -356,7 +357,7 @@ header {
 	}
 	&__card-accordion {
 		border-radius: 8px;
-		box-shadow: 10px 10px 10px rgba(14, 27, 47, 0.65);
+		box-shadow: 10px 10px 10px rgba(209, 130, 11, 0.65);
 	}
 }
 
@@ -385,7 +386,7 @@ header {
 		&:hover {
 			background-color: $hover-color;
 			color: white;
-			.reviews__card-quote {
+			.reviews__card-quote,.reviews__card-name {
 				color: white;
 			}
 		}
@@ -412,13 +413,13 @@ header {
 		}
 		&-quote {
 			font-size: 2rem;
-			color: rgba(52, 89, 221, 0.801);
+			color: rgba(209, 130, 11, 0.801);
 		}
 		&-name {
 			align-self: flex-end;
 			font-weight: bold;
 			font-size: 1.4rem;
-			color: rgba(52, 89, 221, 0.801);
+			color: rgba(209, 130, 11, 0.801);
 		}
 	}
 }

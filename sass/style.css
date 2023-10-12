@@ -42,14 +42,13 @@ body {
   width: 100%;
   transition: background-color 0.6s ease;
   z-index: 100;
-  background-color: rgb(236, 145, 7);
+  background-color: rgb(4, 19, 71);
   text-transform: uppercase;
 }
 .navbar .navbar-items {
   margin-top: 0.5em;
   padding: 0.5em;
   display: none;
-  height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -78,7 +77,7 @@ body {
   font-size: 1.4rem;
 }
 .navbar .navbar-brand:hover {
-  color: rgba(209, 130, 11, 0.801);
+  color: rgba(52, 89, 221, 0.801);
 }
 .navbar .nav-link,
 .navbar .navbar-brand,
@@ -127,7 +126,7 @@ header .fa-chevron-down {
   z-index: 2;
 }
 .hero-text span {
-  color: rgba(209, 130, 11, 0.801);
+  color: rgba(52, 89, 221, 0.801);
 }
 .hero-text h1 {
   font-size: 2rem;
@@ -139,7 +138,7 @@ header .fa-chevron-down {
 
 .hero-img::before {
   content: "";
-  background: linear-gradient(45deg, rgba(14, 27, 47, 0.65), rgba(209, 130, 11, 0.65));
+  background: linear-gradient(45deg, rgba(14, 27, 47, 0.65), rgba(42, 10, 184, 0.65));
   z-index: 1;
   height: 100%;
   width: 100%;
@@ -162,7 +161,7 @@ header .fa-chevron-down {
   transition: background-color 0.7s;
 }
 .hero-btn:hover {
-  background-color: rgba(209, 130, 11, 0.801);
+  background-color: rgba(52, 89, 221, 0.801);
 }
 
 .about-us {
@@ -200,13 +199,13 @@ header .fa-chevron-down {
   background-size: cover;
   background-position: center;
   border-radius: 8px;
-  box-shadow: 5px 5px 10px rgba(209, 130, 11, 0.801);
+  box-shadow: 5px 5px 10px rgba(52, 89, 221, 0.801);
 }
 .about-us__box-img::before {
   position: absolute;
   border-radius: 8px;
   content: "";
-  background: linear-gradient(45deg, rgba(14, 27, 47, 0.95), rgba(209, 130, 11, 0.75));
+  background: linear-gradient(45deg, rgba(14, 27, 47, 0.95), rgba(42, 10, 184, 0.75));
   z-index: 1;
   height: 100%;
   width: 100%;
@@ -251,7 +250,7 @@ header .fa-chevron-down {
   bottom: 0;
   right: 0;
   left: 0;
-  background: linear-gradient(45deg, rgba(14, 27, 47, 0.65), rgba(209, 130, 11, 0.65));
+  background: linear-gradient(45deg, rgba(14, 27, 47, 0.65), rgba(42, 10, 184, 0.65));
   border-radius: 8px;
   overflow: hidden;
 }
@@ -294,7 +293,7 @@ header .fa-chevron-down {
   bottom: 0;
   right: 0;
   left: 0;
-  background: linear-gradient(45deg, rgba(14, 27, 47, 0.95), rgba(209, 130, 11, 0.75));
+  background: linear-gradient(45deg, rgba(14, 27, 47, 0.95), rgba(42, 10, 184, 0.75));
 }
 .adv .adv__hero {
   display: flex;
@@ -325,7 +324,7 @@ header .fa-chevron-down {
   transition: background-color 0.7s;
 }
 .adv .adv__hero-btn:hover {
-  background-color: rgba(209, 130, 11, 0.801);
+  background-color: rgba(52, 89, 221, 0.801);
 }
 
 .why-us__cards {
@@ -343,11 +342,11 @@ header .fa-chevron-down {
 }
 .why-us__card-accordion {
   border-radius: 8px;
-  box-shadow: 10px 10px 10px rgba(209, 130, 11, 0.65);
+  box-shadow: 10px 10px 10px rgba(14, 27, 47, 0.65);
 }
 
 .reviews {
-  background-image: linear-gradient(45deg, rgba(14, 27, 47, 0.65), rgba(209, 130, 11, 0.65)), url("../img/reviews-small.jpg");
+  background-image: linear-gradient(45deg, rgba(14, 27, 47, 0.65), rgba(42, 10, 184, 0.65)), url("../img/reviews-small.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -367,14 +366,14 @@ header .fa-chevron-down {
   margin: 3em;
   background: white;
   border-radius: 8px;
-  box-shadow: 5px 5px 10px rgba(209, 130, 11, 0.801);
+  box-shadow: 5px 5px 10px rgba(52, 89, 221, 0.801);
   transition: all 0.7s;
 }
 .reviews__card:hover {
-  background-color: rgba(209, 130, 11, 0.801);
+  background-color: rgba(52, 89, 221, 0.801);
   color: white;
 }
-.reviews__card:hover .reviews__card-quote, .reviews__card:hover .reviews__card-name {
+.reviews__card:hover .reviews__card-quote {
   color: white;
 }
 .reviews__card-img {
@@ -400,13 +399,13 @@ header .fa-chevron-down {
 }
 .reviews__card-quote {
   font-size: 2rem;
-  color: rgba(209, 130, 11, 0.801);
+  color: rgba(52, 89, 221, 0.801);
 }
 .reviews__card-name {
   align-self: flex-end;
   font-weight: bold;
   font-size: 1.4rem;
-  color: rgba(209, 130, 11, 0.801);
+  color: rgba(52, 89, 221, 0.801);
 }
 
 .contact__boxes {
@@ -433,7 +432,7 @@ header .fa-chevron-down {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  background-color: rgb(236, 145, 7);
+  background-color: rgb(4, 19, 71);
 }
 .contact__box-form label {
   color: white;
@@ -451,7 +450,7 @@ header .fa-chevron-down {
 .contact__box-info-text i {
   font-size: 2.4rem;
   margin-bottom: 0.5em;
-  color: rgb(236, 145, 7);
+  color: rgb(4, 19, 71);
 }
 
 @media (min-width: 767px) {
