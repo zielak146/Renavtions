@@ -1,27 +1,18 @@
-const navBtn = document.querySelector('.navbar-toggler');
-const navbarItems = document.querySelector('.navbar-items');
+const navItems = document.querySelectorAll('.nav_items');
+const navBtn = document.querySelector('.burger-btn');
+const navBar = document.querySelector('.nav');
 
-navBtn.addEventListener('click', () => {
-	navbarItems.classList.toggle('navbar-items--active');
-});
+const handleNav = () => {
+	navBtn.addEventListener('click', () => {
+		navBar.classList.toggle('active');
+		
+	});
+};
 
-// Close the navigation menu when a link is clicked
-const navLinks = document.querySelectorAll('.nav-link');
+handleNav();
 
-navLinks.forEach((link) => {
-	link.addEventListener('click', () => {
-		navbarItems.classList.remove('navbar-items--active');
+navItems.forEach((item) => {
+	item.addEventListener('click', () => {
+		navBar.classList.remove('active');
 	});
 });
-
-function addOne(item){
-	item++
-	console.log(item);
-	return item;
-}
-function addAllWords(...words){
-	let txt = '';
-  for(let i = 0; i > words.lenght; i++){
-  txt += words[i]}
-  console.log(txt);
-  }
