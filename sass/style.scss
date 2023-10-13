@@ -75,7 +75,7 @@ body {
 header {
 	.fa-chevron-down {
 		position: absolute;
-		bottom: 5%;
+		bottom: 10%;
 		left: 50%;
 		font-size: 30px;
 		color: white;
@@ -147,6 +147,7 @@ header {
 // ABOUT
 
 .about-us {
+	background-color: black;
 	height: 100%;
 	width: 100%;
 
@@ -161,6 +162,7 @@ header {
 		&-heading {
 			text-transform: uppercase;
 			margin-top: 0.5em;
+			color: white;
 			text-align: center;
 			padding: 0.5em;
 			font-size: 2rem;
@@ -173,33 +175,35 @@ header {
 			color: white;
 			text-align: center;
 		}
-		&-img {
-			position: relative;
-			height: 100%;
-			width: 100%;
-			background-image: url('../img/tiler-working-renovation-apartment.jpg');
-			background-size: cover;
-			background-position: center;
-			border-radius: 8px;
-			box-shadow: 5px 5px 10px $shadow-color;
-			&::before {
-				position: absolute;
-				border-radius: 8px;
-				content: '';
-				background: $main-gradient-dark;
-				z-index: 1;
-				height: 100%;
-				width: 100%;
-				background-size: cover;
-			}
-		}
+		// &-img {
+		// 	position: relative;
+		// 	height: 100%;
+		// 	width: 100%;
+		// 	background-image: url('../img/tiler-working-renovation-apartment.jpg');
+		// 	background-size: cover;
+		// 	background-position: center;
+		// 	border-radius: 8px;
+		// 	box-shadow: 5px 5px 10px $shadow-color;
+		// 	&::before {
+		// 		position: absolute;
+		// 		border-radius: 8px;
+		// 		content: '';
+		// 		background: $main-gradient-dark;
+		// 		z-index: 1;
+		// 		height: 100%;
+		// 		width: 100%;
+		// 		background-size: cover;
+		// 	}
+		// }
 	}
 }
 
 // SERVICES
 
 .services {
+	background-color: black;
 	&__heading {
+		color: white;
 		text-align: center;
 		text-transform: uppercase;
 		margin-bottom: 1em;
@@ -214,7 +218,7 @@ header {
 		height: 400px;
 		width: 100%;
 		margin-bottom: 1.5em;
-		box-shadow: 10px 10px 10px rgba(14, 27, 47, 0.65);
+		// box-shadow: 5px 5px 10px $main-color;
 		border-radius: 8px;
 		overflow: hidden;
 		&-img {
@@ -322,6 +326,7 @@ header {
 }
 
 .why-us {
+	
 	&__cards {
 		display: flex;
 		flex-direction: column;
@@ -336,8 +341,9 @@ header {
 		background-position: center;
 	}
 	&__card-accordion {
+		background-color:black;
 		border-radius: 8px;
-		box-shadow: 10px 10px 10px rgba(209, 130, 11, 0.65);
+		// box-shadow: 10px 10px 10px rgba(209, 130, 11, 0.65);
 	}
 }
 
@@ -417,6 +423,7 @@ header {
 		flex-direction: column;
 		justify-content: center;
 		align-content: center;
+		width: 100%;
 	}
 
 	&__box-text {
@@ -427,22 +434,7 @@ header {
 		padding: 1em;
 	}
 
-	&__box-form {
-		text-align: center;
-		padding: 4em 2em;
-		border-radius: 8px;
-		display: flex;
-		flex-direction: column;
-		background-color: $main-color;
-		label {
-			color: white;
-			margin: 0.5em 0;
-			font-size: 1.4rem;
-		}
-		textarea {
-			padding: 0 1em;
-		}
-	}
+	
 	&__box-info-text {
 		text-align: center;
 		font-size: 1.4rem;
@@ -454,6 +446,76 @@ header {
 		}
 	}
 }
+
+.footer{
+	padding: 2em;
+	background-color: $main-color;
+	padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+.footer {
+	position: relative;
+	width: 100%;
+	background: $main-color;
+	min-height: 100px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+	list-style: none;
+  }
+  
+  .social-icon__link {
+	font-size: 2rem;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+  }
+  .social-icon__link:hover {
+	transform: translateY(-10px);
+  }
+  
+  .menu__link {
+	font-size: 1.2rem;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+	text-decoration: none;
+	opacity: 0.75;
+	font-weight: 300;
+  }
+  
+  .menu__link:hover {
+	opacity: 1;
+  }
+  
+  .footer p {
+	color: #fff;
+	margin: 15px 0 10px 0;
+	font-size: 1rem;
+	font-weight: 300;
+  }
+  
+  
+  
 
 // Media/
 
